@@ -13,10 +13,10 @@
             <h3 class="px-3">Categorias</h3>
             <ul>
                 <li onclick="exibirTodos()">Todos (12)</li>
-                <li onclick="exibirCategoria('gatofilhote')">Gatos filhotes (4)</li>
-                <li onclick="exibirCategoria('gatoadulto')">Gatos adultos (4)</li>
-                <li onclick="exibirCategoria('cachorrofihlote')">Cachorros filhotes (4)</li>
-                <li onclick="exibirCategoria('cachorroadulto')">Cachorros adultos (4)</li>
+                <li onclick="exibirCategoria('Gato filhote')">Gatos filhotes (4)</li>
+                <li onclick="exibirCategoria('Gato adulto')">Gatos adultos (4)</li>
+                <li onclick="exibirCategoria('Cachorro filhote')">Cachorros filhotes (4)</li>
+                <li onclick="exibirCategoria('Cachorro adulto')">Cachorros adultos (4)</li>
             </ul>
         </section>
         <div class="secundario container-fluid">
@@ -32,7 +32,7 @@
                 while($row=mysqli_fetch_assoc($resultado)){
             ?>
 
-                <div class="estilop">
+                <div class="estilop" id="<?php echo $row['categoria']; ?>">
                     <img src="<?php echo $row['imagem'];?>" width="120px" onclick="destaque(this)">
                     <br>
                     <p class="descricao"><?php echo $row['categoria']; ?></p>

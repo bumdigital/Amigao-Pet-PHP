@@ -30,6 +30,10 @@ body {
     font-size: 15px;
     color: #000000;
 }
+#descricao {
+    font-size: 15px;
+    color: #000000;
+}
 .preco{
     font-size: 20px;
     color: #008000;
